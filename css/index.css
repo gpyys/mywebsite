@@ -1,0 +1,440 @@
+html,body,div,h1,h2,h3,h4,h5,h6,p,a,span,i,em,ul,li,ol{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style:none;
+	font-style: normal;
+	font-family: "微软雅黑";
+}
+.bg{
+	position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.bg-color{
+	position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: rgba(140, 180, 142, 0.4);
+}
+/*头部开始*/
+.top-header span{
+	color:#5cb48e;
+	cursor:pointer;
+}
+.top-header{
+    position: relative;
+    z-index: 10;
+    padding: 14px 0;
+    background: rgba(30, 20, 30, 0.7);
+}
+.top-header p{
+	color:#fff;
+}
+.info-right{
+    text-align: right;
+}
+/*头部结束*/
+/*自我简介开始*/
+#wrap-box{
+	position: relative;
+    z-index: 12;
+    margin-top: 60px;
+}
+#nav li{
+    margin-bottom: 30px;
+}
+#nav span{
+	display: block;
+    width: 170px;
+    height: 170px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    margin: 0 auto;
+    line-height: 170px;
+    position: relative;
+    cursor: pointer;
+}
+#nav i {
+    font-size: 36px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    top: 46px;
+    left: 65px;
+}
+#nav em{
+	display: block;
+	width: 100px;
+	height: 30px;
+	margin-top: 10px;
+	line-height: 30px;
+	position: absolute;
+	top: 80px;
+	left: 35px;
+}
+.main-menu li:nth-of-type(1) span{
+  background: #207d59;
+}
+.main-menu li:nth-of-type(2) span{
+  background: #3b5b8e;
+}
+.main-menu li:nth-of-type(3) span{
+  background: #5c9faf;
+}
+.main-menu li:nth-of-type(4) span{
+  background: #b85b53;
+}
+#nav span:hover{
+	 transition:all .8s;
+     color:#ddd;
+}
+#nav span:active{
+	 transition:all .3s;
+     opacity: .6
+}
+.myhead{
+    position: relative;
+    margin-top: 120px;
+    margin-left: 42%;
+    animation:left 2s cubic-bezier(.99,.2,.02,1.63);
+}
+@keyframes left{
+    0%{
+        margin-left: -30%;
+    }
+    100%{
+        margin-left: 42%;
+    }
+}
+.myhead img{
+	width: 140px;
+	height: 140px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    animation:move 4.5s infinite 2.5s;
+}
+
+.messigeBox{
+    position: relative;
+    margin-top: 60px;
+    text-shadow:0 0 20px rgb(32, 256, 89); 
+    animation: text 9s infinite 2.5s;
+}
+@keyframes text{
+    0%{
+        text-shadow:0 0 20px rgb(32, 256, 89);
+    }
+    25%{
+        text-shadow:0 0 20px rgb(92, 159, 175);
+    }
+    50%{
+        text-shadow:0 0 10px rgb(32, 256, 89);
+    }
+    75%{
+        text-shadow:0 0 20px rgb(92, 159, 175);
+    }
+    100%{
+        text-shadow:0 0 10px rgb(32, 256, 89);
+    }                
+}
+@keyframes move{
+
+    0%{
+    transform:rotateY(0deg);
+    }
+    50%{
+    transform:rotateY(180deg);
+    }       
+    100%{
+    transform:rotateY(360deg);
+    }
+}
+.messigeBox h2{
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+    letter-spacing: 0.1em;
+} 
+.writing p{
+	text-align: left;
+	color: #fff;
+	font-size:20px;
+	line-height: 30px;
+}   
+.writing .brief{
+	font-size: 16px;
+	margin-top: 80px;
+	letter-spacing: 0.1em;
+	text-align: center;
+}
+.writing .brief span{
+	font-size: 24px;
+	font-family: "宋体"
+}
+.writing p:nth-of-type(3){
+	text-align: right;
+	margin-top: 90px;
+	text-indent: 4em;
+}
+.writing p:nth-of-type(3) span{
+	display: block;
+	margin-top: 10px;
+}
+/*自我简介结束*/
+/*工作经验开始*/
+/*工作经验结束*/
+/*作品展示开始*/
+.box-content {
+    background: white;
+    color: #555;
+    font-family: 'robotolight';
+    padding: 30px;
+    margin-top: 30px;
+}
+.box-content .title {
+    font-size: 22px;
+    color: #333;
+    font-family: 'robotolight';
+    margin-bottom: 30px;
+} 
+.pages ul li{
+    display: inline-block;
+}  
+.pages ul li a:hover{
+    background: #5cb48e;
+    color:white;
+}
+.pages ul li a{
+    width: 34px;
+    height: 34px;
+    color: #333333;
+    text-align: center;
+    line-height: 34px;
+    display: block;
+    background: #dddddd;
+    text-decoration: none;
+    transition:all .5s;    
+    
+} 
+.bottomMargin{
+    position: relative;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+.bottomMargin img{
+    width: 100%;
+    display: block;
+}
+.info-hover {
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    visibility: hidden;
+    padding: 10px 20px;
+    -webkit-transition: all 200ms linear;/*chrome*/
+    -moz-transition: all 200ms linear;/*firefox*/
+    -ms-transition: all 200ms linear;/*ie*/
+    -o-transition: all 200ms linear;/*opera*/
+    transition: all 200ms linear;
+    z-index: 11;
+} 
+.bottomMargin:hover .info-hover{
+    bottom: 0;
+    opacity: 1;
+    visibility: visible;
+}
+.bottomMargin a{
+    overflow: hidden;
+    display: block;
+
+} 
+.bottomMargin a:hover{
+    text-decoration:none;
+}
+.info-hover h4{
+   color: #fff;
+}  
+.bottomMargin img{
+    transition:all .8s;
+}
+.bottomMargin img:hover{
+    transform: scale(1.1, 1.1);
+}           
+.h{
+    display: none;
+}
+/*作品展示结束*/ 
+/*掌握技能开始*/
+.about-text {
+    margin-left: 10px;
+}
+.padding-left {
+    padding-left: 50px;
+    margin-top: 33px;
+    color: #444;
+}
+.content{
+    display: none;
+}
+.about-text span {
+    font-family: iconfont;
+    font-size: 27px;
+    color: #FFF;
+    display: block;
+    float: left;
+    margin-top: 5px;
+    margin-left: -40px;
+    width: 30px;
+    height: 30px;
+}
+.padding-left h4 {
+    display: inline-block;
+    color: #333;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.icon-pcduan{
+    background: url('../images/2.png');
+    display: block;
+    background-size: cover;
+}
+.icon-yidongduan{
+    background: url('../images/3.png');
+    display: block;
+    background-size: cover;
+}
+.icon-qita{
+    background: url('../images/1.png');
+    display: block;
+    background-size: cover;
+}
+.work h4{
+    font-weight:600;
+    margin-bottom: 20px;
+    color: orangeRed;
+}
+.work img{
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+
+}
+.work h3{
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+    text-align: center;
+    color: #000; 
+    font-family: "黑体"
+} 
+.work p{
+    color:#000;   
+}
+.about-social li{
+    background: white;
+    height:auto;
+    overflow: hidden;
+    margin-top: 30px;
+}
+.about-social li canvas{
+    float: left;
+}
+.about-social li div{
+    width: 100px;
+    height: 100px;
+    float: right;
+}
+.about-social li .t1{
+   background: url(../images/h5.jpg) no-repeat;
+   background-size: contain;
+}
+.about-social li .t2{
+   background: url(../images/css.png) no-repeat;
+   background-size: contain;
+}
+.about-social li .t3{
+   background: url(../images/js.jpg) no-repeat;
+   background-size: contain;
+}
+/*掌握技能结束*/
+@media (max-width: 991px){
+.rightBox {
+    display: none!important;
+  }  
+}
+/*响应式导航栏开始*/
+.responsive-menu {
+    position: relative;
+    text-align: center;
+    z-index: 99;
+    margin-top: 60px;
+    margin-bottom: 60px;
+ }
+.toggle-menu {
+    color: white !important;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 15px 30px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+}  
+.responsive-menu{
+    display: none;
+} 
+@media (max-width: 991px){
+    .responsive-menu{
+        display: block!important; 
+        line-height: 26px;
+        cursor: pointer;
+     } 
+    .top-header p{
+        text-align: center;
+        line-height: 30px;      
+    }
+}
+ .toggle-menu>i { 
+    background:url(../images/menu.png) no-repeat; 
+    display:inline-block;
+    margin-right: 15px;
+    height: 26px;
+    width: 26px;
+    background-size: cover;
+    vertical-align: middle;
+   
+}  
+.show-menu {
+    background: rgba(92, 180, 142, 0.5);
+}
+.show-menu li {
+    display: block;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    cursor:pointer;
+}
+.show-menu span {
+    padding: 15px 20px;
+    display: inline-block;
+    width: 90%;
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    background: transparent;
+ }      
+/*响应式导航栏结束*/
